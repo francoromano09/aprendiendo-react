@@ -69,12 +69,7 @@ function App() {
     // revisar si hay ganador
     const newWinner = checkWinner(newBoard)
     if (newWinner){
-      
-      setWinner((prevWinner) =>{
-        console.log(`Ganador: ${newWinner}, el anterior era ${prevWinner}`)
-        return newWinner
-      }) // actualiza el estado - es asincrono
-      
+      setWinner(newWinner)
     }
   }
 
